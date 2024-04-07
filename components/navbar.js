@@ -39,16 +39,16 @@ const Navbar = () => {
       {/* Navigation options */}
       <div className={`hidden md:flex space-x-6 ${styles.customFont}`}>
         <Link className={`hover:text-gray-300 ${router.pathname === '/homepage' ? 'font-bold' : ''}`} href="/homepage">
-          Home
+          home
         </Link>
         <Link className={`hover:text-gray-300 ${router.pathname === '/model' ? 'font-bold' : ''}`} href="/model">
-          Model
+          model
         </Link>
         <Link className={`hover:text-gray-300 ${router.pathname === '/programs' ? 'font-bold' : ''}`} href="/programs">
-          Programs
+          programs
         </Link>
-        <Link className={`hover:text-gray-300 ${router.pathname === '/about' ? 'font-bold' : ''}`} href="/about">
-          About
+         <Link className={`hover:text-gray-300 ${router.pathname === '/about' ? 'font-bold' : ''}`} href="/about">
+          about
         </Link>
       </div>
 
@@ -56,16 +56,16 @@ const Navbar = () => {
         <div className=" sm-flex absolute top-full left-0 z-50 bg-white w-full border border-gray-200 shadow-lg py-2">
           <ul className="text-purple-900 text-center">
             <li className="hover:bg-gray-100">
-              <Link className={`${router.pathname === '/homepage' ? 'font-bold' : ''}`} href="/homepage">Home</Link>
+              <Link className={`${router.pathname === '/homepage' ? 'font-bold' : ''}`} href="/homepage">home</Link>
             </li>
             <li className="hover:bg-gray-100">
-              <Link className={`${router.pathname === '/model' ? 'font-bold' : ''}`} href="/model">Model</Link>
+              <Link className={`${router.pathname === '/model' ? 'font-bold' : ''}`} href="/model">model</Link>
             </li>
             <li className="hover:bg-gray-100">
-              <Link className={`${router.pathname === '/programs' ? 'font-bold' : ''}`} href="/programs">Programs</Link>
+              <Link className={`${router.pathname === '/programs' ? 'font-bold' : ''}`} href="/programs">programs</Link>
             </li>
             <li className="hover:bg-gray-100">
-              <Link className={`${router.pathname === '/about' ? 'font-bold' : ''}`} href="/about">About</Link>
+              <Link className={`${router.pathname === '/about' ? 'font-bold' : ''}`} href="/about">about</Link>
             </li>
             <li className="hover:bg-gray-100">
               <div className="md:flex items-center" >
