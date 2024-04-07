@@ -1,0 +1,24 @@
+/* navbar.module.css */
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('/fonts/Avenir.woff2') format('woff2'),
+         url('/fonts/Avenir.woff') format('woff');
+        
+  }
+  
+  .customFont {
+    font-family: 'Avenir', sans-serif;
+    font-size: 1.5em;
+  }
+
+.circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%; 
+
+}
+
