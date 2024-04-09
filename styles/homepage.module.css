@@ -1,0 +1,117 @@
+/* logoSection*/
+.logoSection {
+    background-color: #37194D;
+    width: 115%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logoContainer {
+    position: relative;
+    width: 70vw; /* Adjust the width of the logo container */
+    max-width: 2000px; /* Adjust the maximum width of the logo container */
+  }
+  
+  .logo {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Ensure the height of the logo is square */
+}
+  
+  .logo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .slogan {
+    color: #ffffff;
+    font-size: 1.5rem; /* Adjust the font size of the slogan */
+    margin-top: 0px; /* Adjust the margin between logo and slogan */
+    text-align: center;
+  }
+  
+
+  /* facts */
+  .factSection {
+    background-color: #ffffff;
+    padding: 50px 0; /* Add padding to the top and bottom */
+  }
+  
+  .factContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Change the width to your desired value */
+
+  }
+  
+  .fact {
+    width: calc((100% - 0px) / 3); /* Calculate the width of each div */
+    padding: 10px; /* Add padding to the fact divs */
+    margin: 0 5px; /* Add margin between the fact divs */
+    text-align: center;
+    color: #37194D;
+  }
+  
+  .fact p {
+    margin: 0px; /* Remove default margin of paragraphs */
+  }
+  
+  /*vision */
+  .visionSection {
+    background-color: #9B8CA6;
+    padding: 50px 0; /* Add padding to the top and bottom */
+    display: flex;
+    width: 115%; /* Change the width to your desired value */
+  }
+  
+  .visionContainer {
+    display: flex;
+    justify-content: space-between; /* Arrange the divs with space between them */
+    align-items: center;
+  }
+  
+  .visionContent {
+    flex: 1;
+    padding: 0 100px; /* Add horizontal padding */
+  
+}
+  
+  .visionImage {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .visionImage img {
+    max-width: 100%; /* Ensure the image doesn't exceed the container width */
+    max-height: 100%; /* Ensure the image doesn't exceed the container height */
+  }
+  
+  .visionContent h2 {
+    color: #37194D; /* Set text color */
+    font-size: 24px; /* Set font size */
+    font-weight: bold; /* Set font weight to bold */
+  }
+  
+  .visionContent p {
+    color: #37194D; /* Set text color */
+  }
+  
+  .visionContent button {
+    background-color: #ffffff; /* Set button background color to white */
+    color: #9B8CA6; /* Set button text color */
+    padding: 10px 20px; /* Add padding to the button */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius to the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Add transition effect */
+  }
+  
+  .visionContent button:hover {
+    background-color: #e0e0e0; /* Change button background color on hover */
+  }
+  
