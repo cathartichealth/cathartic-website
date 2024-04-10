@@ -1,3 +1,4 @@
+
 /* logoSection*/
 .logoSection {
     background-color: #37194D;
@@ -115,3 +116,37 @@
     background-color: #e0e0e0; /* Change button background color on hover */
   }
   
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('/fonts/Avenir.woff2') format('woff2'),
+         url('/fonts/Avenir.woff') format('woff');
+}
+
+.homepage
+{
+    background-color: #9B8CA6;
+}
+
+.title
+{
+    font-family: 'Avenir', sans-serif;
+    color:#37194D;
+    font-weight: 700;
+    font-size: 3vw;
+}
+
+.description
+{
+
+    color:#37194D;
+    font-weight: 200;
+
+}
+
+.text
+{
+    color:#37194D;
+    font-weight: 400;
+}
+

@@ -1,20 +1,22 @@
-import styles from '../styles/navbar.module.css';
+// Footer.js
+import styles from '../styles/footer.module.css';
 
 const Footer = () => {
   return (
-    <footer className="bg-purple-950 text-white py-6 fixed bottom-0 left-0 right-0">
-      <div className={`container mx-auto flex items-center justify-between px-8 ${styles.customFont}`}>
+    <footer className={`${styles.footer} bg-purple-950 text-white py-6 fixed bottom-0 left-0 right-0`}>
+      <div className={`container mx-auto flex flex-wrap items-center justify-between px-8 ${styles.customFont}`}>
       
-        <div className="w-1/3 text-left text-sm">
+        <div className="text-center w-full sm:w-1/3 text-sm mb-4 sm:mb-0">
           <a href="mailto:operations@cathartichealth.org" className="text-white">{`operations@cathartichealth.org`}</a>
         </div>
-        <div className="w-1/4 text-center">
-            <div className="bg-white text-md font-bold bg-opacity-50 text-opacity-100 text-white px-4 py-2">
-                Join Our Newsletter
-            </div>
+        <div className="w-full sm:w-1/4 text-center mb-4 sm:mb-0">
+        <button className={styles.newsletterButton}>
+          <div className={styles.newsletterText}>Join Our Newsletter</div>
+        </button>
+
         </div>
-        <div className="w-1/3 text-right">
-          <p className="text-white  text-sm ">© Cathartic. All rights reserved 2022. Privacy policy</p>
+        <div className="w-full sm:w-1/3 text-center">
+          <p className="text-white text-sm">© Cathartic. All rights reserved 2022. Privacy policy</p>
         </div>
       </div>
     </footer>
