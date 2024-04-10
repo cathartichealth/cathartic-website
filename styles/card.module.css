@@ -61,6 +61,9 @@
 }
 
 .description {
+  position: absolute;
+  top: 0;
+  margin-top: 2vw;
   padding: 10px;
   font-size: 18px;
   color: #333333;
@@ -69,9 +72,11 @@
 }
 
 .button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2vw;
+  padding: 5px 10px;
+  font-size: 1.5vw;
   background-color: #b794d0;
   color: #ffffff;
   border: none;

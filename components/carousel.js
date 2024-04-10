@@ -7,9 +7,8 @@ function Carousel() {
 
     const images = [
         "home1.png",
-        "periodcare.png",
-        "skinprotection.png",
-        "foothealth.png"
+        "home2.png",
+        "home3.png"
     ];
 
     const nextSlide = () => {
@@ -32,14 +31,14 @@ function Carousel() {
                 ))}
 
                 {isHovered && (
-                    <div className="absolute bottom-0 gap-10 w-full flex justify-center">
+                    <div className="absolute text-white bottom-0 gap-10 w-full flex justify-center">
                         <button
                             type="button"
                             className="flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
                             onClick={prevSlide}
                         >
                             <svg
-                                className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                                className="w-4 h-4 text-white rtl:rotate-180"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -61,7 +60,7 @@ function Carousel() {
                             onClick={nextSlide}
                         >
                             <svg
-                                className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                                className="w-4 h-4 text-white rtl:rotate-180"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"

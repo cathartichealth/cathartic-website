@@ -3,7 +3,7 @@ import styles from '../styles/footer.module.css';
 
 const Footer = () => {
   return (
-    <footer className={`${styles.footer} bg-purple-950 text-white py-6 fixed bottom-0 left-0 right-0`}>
+    <footer className={`${styles.footer} bg-purple-950 text-white py-6  left-0 right-0`}>
       <div className={`container mx-auto flex flex-wrap items-center justify-between px-8 ${styles.customFont}`}>
       
         <div className="text-center w-full sm:w-1/3 text-sm mb-4 sm:mb-0">

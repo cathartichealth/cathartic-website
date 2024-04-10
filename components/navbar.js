@@ -38,16 +38,16 @@ const Navbar = () => {
 
       {/* Navigation options */}
       <div className={`hidden md:flex space-x-6 ${styles.customFont}`}>
-        <Link className={`hover:text-gray-300 ${router.pathname === '/homepage' ? 'font-bold' : ''}`} href="/homepage">
+        <Link className={`hover:underline hover:text-gray-400 ${router.pathname === '/' ? 'font-bold' : ''}`} href="/">
           home
         </Link>
-        <Link className={`hover:text-gray-300 ${router.pathname === '/model' ? 'font-bold' : ''}`} href="/model">
+        <Link className={`hover:underline hover:text-gray-400 ${router.pathname === '/model' ? 'font-bold' : ''}`} href="/model">
           model
         </Link>
-        <Link className={`hover:text-gray-300 ${router.pathname === '/programs' ? 'font-bold' : ''}`} href="/programs">
+        <Link className={`hover:underline hover:text-gray-400 ${router.pathname === '/programs' ? 'font-bold' : ''}`} href="/programs">
           programs
         </Link>
-         <Link className={`hover:text-gray-300 ${router.pathname === '/about' ? 'font-bold' : ''}`} href="/about">
+         <Link className={`hover:underline hover:text-gray-400 ${router.pathname === '/about' ? 'font-bold' : ''}`} href="/about">
           about
         </Link>
       </div>

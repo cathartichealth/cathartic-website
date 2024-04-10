@@ -1,0 +1,4 @@
+.carousel-item {
+    transition: opacity 4s ease-in-out; /* Add transition effect */
+}
+
