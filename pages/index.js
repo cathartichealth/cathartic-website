@@ -83,14 +83,14 @@ export default function Home() {
     imageUrl: 'periodcare.png',
     title: 'Period Care',
     description: 'We give out period care projects, such as pads, tampons, and panty liners to those who need greater access to these resources. These products are especially expensive and single use.',
-    learnMoreUrl: '/skincare'
+    learnMoreUrl: '/periodcare'
   };
 
   const cardData3 = {
     imageUrl: 'foothealth.png',
     title: 'Foot Health',
     description: 'The homeless population of Los Angeles seriously lacks proper clothing to protect them from their physical environment. One such piece of clothing that is commonly missing are socks.',
-    learnMoreUrl: '/skincare'
+    learnMoreUrl: '/foothealth'
   };
 
   return (
@@ -101,7 +101,6 @@ export default function Home() {
       <Navbar />
       <LogoSection />
       <FactSection />
-
       <VisionSection />
 
       
