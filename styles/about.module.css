@@ -1,0 +1,21 @@
+.title
+{
+    font-family: 'Avenir', sans-serif;
+    color:#ffffff;
+    font-weight: 700;
+    font-size: 3vw;
+}
+
+.description
+{
+  font-family: 'Avenir', sans-serif;
+    color:#ffffff;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 1.75vw;
+}
+
+.about
+{
+    background-color: #37194D;
+}
