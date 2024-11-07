@@ -24,7 +24,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="pl-4 fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-2 bg-white text-purple-900 shadow-lg">
+    <nav className="pl-4 w-full top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-2 bg-white text-purple-900 shadow-lg">
       <div className="p-4 flex items-center">
         <Image src="/cathartic.png" alt="Logo" width={200} height={250} />
       </div>
@@ -84,7 +84,6 @@ const Navbar = () => {
         </div>
       )}
 
-      {/* Social icons in the top right corner */}
       <div className="hidden md:flex items-center space-x-4" >
         <a href="https://www.instagram.com/cathartichealth/" className={`hover:opacity-30 ${styles.circle}`} target="_blank" rel="noopener noreferrer">
           <Image src="/insta.png" alt="Instagram" width={60} height={60} />
