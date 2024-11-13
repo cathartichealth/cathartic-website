@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function About() {
     const cardData1 = {
-      imageUrl: 'ppl.png',
+      imageUrl: 'fruit.png',
       title: 'Operations',
       description: 'We provide skin care and sunscreen products to those in need. Sunscreen is expensive, and protection from UV light is extremely important to prevent skin cancer.',
       learnMoreUrl: '/skincare'
@@ -26,14 +26,14 @@ export default function About() {
     };
   
     const cardData3 = {
-      imageUrl: 'ppl.png',
+      imageUrl: 'sock.png',
       title: 'Human Resources',
       description: 'The homeless population of Los Angeles seriously lacks proper clothing to protect them from their physical environment. One such piece of clothing that is commonly missing are socks.',
       learnMoreUrl: '/foothealth'
     };
 
     const cardData4 = {
-        imageUrl: 'ppl.png',
+        imageUrl: 'tech.png',
         title: 'Technology',
         description: 'The homeless population of Los Angeles seriously lacks proper clothing to protect them from their physical environment. One such piece of clothing that is commonly missing are socks.',
         learnMoreUrl: '/foothealth'
@@ -61,8 +61,10 @@ export default function About() {
       <main
         className={`homepage ${styles.about} bg-white flex min-h-screen flex-col items-center justify-between ${inter.className}`}
       >
+      
         <div className='w-full'>
           <Navbar />
+
 
         </div>
   

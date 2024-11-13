@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
-
+import React, { useEffect, useState } from 'react';
 import styles from '../styles/homepage.module.css';
 
 import Card from '../components/card';
@@ -24,26 +24,56 @@ const LogoSection = () => {
 }
 
 const FactSection = () => {
+  const [donatedValue, setDonatedValue] = useState(0);
+  const [totalUnits, setTotalUnits] = useState(0);
+  const [totalDonors, setTotalDonors] = useState(0);
+
+  useEffect(() => {
+    const duration = 1500; // Duration in milliseconds
+    const frameDuration = 16; // Approximate time for one frame (60fps)
+    const totalFrames = Math.round(duration / frameDuration);
+
+    const incrementValue = (setter, targetValue) => {
+      let currentFrame = 0;
+      const increment = targetValue / totalFrames; // Ensure all targets reach at the same time
+
+      const interval = setInterval(() => {
+        currentFrame++;
+        const currentValue = Math.ceil(currentFrame * increment);
+
+        if (currentFrame <= totalFrames) {
+          setter(currentValue);
+        } else {
+          clearInterval(interval);
+          setter(targetValue); // Make sure to set the final value precisely
+        }
+      }, frameDuration);
+    };
+
+    incrementValue(setDonatedValue, 315000);
+    incrementValue(setTotalUnits, 179000);
+    incrementValue(setTotalDonors, 22);
+  }, []);
+
   return (
     <section className={styles.factSection}>
       <div className={styles.factContainer}>
         <div className={styles.fact}>
-          <p className={styles.num}>$315,000</p>
+          <p className={styles.num}>${donatedValue}</p>
           <p>worth of donated product</p>
         </div>
         <div className={styles.fact}>
-          <p className={styles.num} >179,000</p>
+          <p className={styles.num}>{totalUnits}</p>
           <p>total units donated</p>
         </div>
         <div className={styles.fact}>
-          <p className={styles.num} >22</p>
+          <p className={styles.num}>{totalDonors}</p>
           <p>total donors and recipients</p>
         </div>
       </div>
     </section>
   );
 }
-
 const VisionSection = () =>
 {
   return (

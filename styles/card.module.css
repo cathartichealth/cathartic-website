@@ -60,7 +60,15 @@
   transform: translateY(-50%);
   font-size: 24px;
   font-size: 2vw;
+  color: white;
+  text-shadow:
+  -1px -1px 0 #37194D,
+  1px -1px 0 #37194D,
+  -1px 1px 0 #37194D,
+  1px 1px 0 #37194D; 
 }
+
+
 
 .description {
   position: absolute;
