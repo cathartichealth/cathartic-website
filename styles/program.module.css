@@ -79,4 +79,224 @@
     cursor: pointer;
     z-index: 3;
   }
-  
+
+/***** Problem Section *****/
+
+.problemSection {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.problemTitle {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 109px;
+  color: #37194D; /* Purple color */
+  margin-bottom: 30px; /* Space between title and text */
+}
+
+.problemText {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #37194D; /* Purple color */
+  max-width: 80vw;
+  margin: 0 auto;
+  margin-bottom: 50px; /* Space between text and images */
+}
+
+.images {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.image {
+}
+
+/***** Data Chart Section *****/
+
+.dataChartSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.dataContainer {
+  display: flex;
+  max-width: 1600px;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.imageContainer {
+  flex: 1;
+}
+
+.dataImage {
+  width: 670px;
+  height: 670px;
+  object-fit: cover;
+  background-color: #D9D9D9;
+}
+
+.dataContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 800px;
+}
+
+.dataTitle {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 109px;
+  color: #37194D;
+  margin-bottom: 30px;
+}
+
+.dataText {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #37194D;
+  margin-bottom: 40px;
+}
+
+.dataStats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.dataStats div {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 49px;
+  color: #37194D;
+}
+
+/***** Benefit Section (Flipped) *****/
+
+.benefitSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.benefitContainer {
+  display: flex;
+  max-width: 1600px;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.benefitContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 661px;
+}
+
+.benefitTitle {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 109px;
+  color: #37194D;
+  margin-bottom: 30px;
+}
+
+.benefitText {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #37194D;
+  margin-bottom: 40px;
+}
+
+.benefitStats {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.benefitStats div {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 49px;
+  color: #37194D;
+}
+
+.imageContainer {
+  flex: 1;
+}
+
+.benefitImage {
+  width: 670px;
+  height: 670px;
+  object-fit: cover;
+  background-color: #D9D9D9;
+}
+
+/***** Features Section *****/
+
+.featuresSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+.featuresTitle {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 109px;
+  color: #37194D;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.featuresText {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #37194D;
+  text-align: center;
+  max-width: 1500px;
+  margin-bottom: 40px;
+}
+
+.featuresImageContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.featuresImage {
+  width: 874px;
+  height: 874px;
+  object-fit: cover;
+}

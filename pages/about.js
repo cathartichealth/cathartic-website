@@ -61,10 +61,16 @@ export default function About() {
       <main
         className={`homepage ${styles.about} bg-white flex min-h-screen flex-col items-center justify-between ${inter.className}`}
       >
+<<<<<<< Updated upstream
 
           <Navbar />
 
 
+=======
+  
+          <Navbar />
+
+>>>>>>> Stashed changes
   
         <div className={`${styles.title} mt-36 text-center p-3`}>
           <p>About Us</p>
