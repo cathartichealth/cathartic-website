@@ -61,19 +61,24 @@ export default function About() {
       <main
         className={`homepage ${styles.about} bg-white flex min-h-screen flex-col items-center justify-between ${inter.className}`}
       >
-        <Navbar />
-  
-        <div className={`${styles.title} mt-36 text-center p-3`}>
-          <p>About Us</p>
+      
+        <div className='w-full'>
+          <Navbar />
+
+
         </div>
   
-        <div className={`${styles.description} text-center text-lg mb-6 w-4/5 xl:w-3/5 mx-auto`}>
-        <p> Our mission is to cultivate meaningful giving relationships to improve the preventative health of under-resourced populations. </p>
+        
   
+        <div className={`${styles.description} my-24 text-center text-lg  w-4/5 xl:w-3/5 mx-auto`}>
+          <div className={`${styles.title} p-4 text-center `}>
+            <p className={`${styles.title_about} p-4 text-center`} >About Us</p>
           </div>
+          <div className={'px-[70px]'}> Our mission is to cultivate meaningful giving relationships to improve the preventative health of under-resourced populations. </div>
+        </div>
 
   
-        <div className={`${styles.title} text-center p-3`}>
+        <div className={`${styles.title_about} text-center p-3`}>
           <p>Values</p>
         </div>
   
