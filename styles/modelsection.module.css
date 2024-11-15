@@ -1,0 +1,35 @@
+/* styles/modelsection.module.css */
+.infoSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    width: 1200px;
+}
+
+.textContainer {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.title {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 82px;
+    color: #37194D;
+    margin-bottom: 20px;
+}
+
+.blurb {
+    font-family: 'Avenir', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 34px;
+    color: #37194D;
+}
+
+.imageContainer {
+    width: 603px;
+    height: 453px;
+}

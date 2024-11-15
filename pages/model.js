@@ -1,140 +1,98 @@
+import { useRef } from 'react';
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
-import styles from '../styles/program.module.css';
+import styles from '../styles/model.module.css';
 import Card from '../components/card';
 import Info from '../components/info';
+import ModelSection from "@/components/modelsection";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function ProgramPage() {
-    
+export default function Model() {
+    // Creating references for each section
+    const suppliersRef = useRef(null);
+    const catharticRef = useRef(null);
+    const clientsRef = useRef(null);
+    const targetPopulationRef = useRef(null);
+
+    // Function to handle scrolling to a specific section
+    const scrollToSection = (ref) => {
+        ref.current.scrollIntoView({ behavior: 'smooth' });
+    };
+
     return (
-
-        <main className={`program-page ${styles.program} bg-white flex min-h-screen flex-col items-center ${inter.className}`}>
+        <main className="program-page bg-white flex min-h-screen flex-col items-center">
             <Navbar />
-        <section className={styles.hero}>
-            <div className={styles.overlay}></div>
-            <Image
-                src='/ppl.png'
-                alt="Skin Care Program Background"
-                layout="fill"
-                objectFit="cover"
-                className={styles.backgroundImage}
-            />
-            <div className={styles.content}>
-                <h1 className={styles.title}>Skin Care Program</h1>
-                <p className={styles.caption}>
-                Skin health is a critical quality of life concern and for those without daily sun protection products, they are disproportionately at risk for countless diseases from skin cancer to eczema.
+
+            <section className={styles.heroSection}>
+                <h1 className={styles.heroTitle}>Model</h1>
+                <p className={styles.heroBlurb}>
+                    Cathartic lessens preventative health inequities for under-resourced populations. 
+                    Scroll down to follow the journey of a product donated through our pipeline…
                 </p>
-                <button className={styles.donateButton}>DONATE NOW</button>
-            </div>
-        </section>
-
-        <section className={styles.problemSection}>
-            <div className={styles.container}>
-                <h2 className={styles.problemTitle}>The Problem</h2>
-                <p className={styles.problemText}>
-                    The Skin Protection Program is an initiative that provides sunscreen to unhoused populations in Los Angeles County. Bare Republic worked with Cathartic, a health equity organization, and local LA nonprofits to distribute 700+ bottles of sunscreen. In addition, Bare Republic aims to educate these populations about the importance of sunscreen and skin protection.
-                </p>
-
-                <div className={styles.images}>
-                    <Image
-                        src='/beach.png'
-                        alt="Skin Care Program At The Beach"
-                        width={450}
-                        height={400}
-                        className={styles.image}
-                    />
-                    <Image
-                        src='/shareameal.png'
-                        alt="Share A Meal Program"
-                        width={450}
-                        height={400}
-                        className={styles.image}
-                    />
-                    <Image
-                        src='/tents.png'
-                        alt="Tents"
-                        width={450}
-                        height={400}
-                        className={styles.image}
-                    />
+                <div className={styles.buttonContainer}>
+                    <button 
+                        className={styles.heroButton} 
+                        onClick={() => scrollToSection(suppliersRef)}
+                    >
+                        Suppliers
+                    </button>
+                    <button 
+                        className={styles.heroButton} 
+                        onClick={() => scrollToSection(catharticRef)}
+                    >
+                        Cathartic
+                    </button>
+                    <button 
+                        className={styles.heroButton} 
+                        onClick={() => scrollToSection(clientsRef)}
+                    >
+                        Clients
+                    </button>
+                    <button 
+                        className={styles.heroButton} 
+                        onClick={() => scrollToSection(targetPopulationRef)}
+                    >
+                        Target Population
+                    </button>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section className={styles.dataChartSection}>
-            <div className={styles.dataContainer}>
-                <div className={styles.imageContainer}>
-                    <Image
-                        src='/placeholderdata.png'
-                        alt="Data Chart Image"
-                        width={670}
-                        height={670}
-                        className={styles.dataImage}
-                    />
-                </div>
-                <div className={styles.dataContent}>
-                    <h2 className={styles.dataTitle}>Data Chart</h2>
-                    <p className={styles.dataText}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.
-                    </p>
-                    <div className={styles.dataStats}>
-                        <div>Units Distributed: 2,360</div>
-                        <div>People Supported: 2,360</div>
-                        <div>Amount of Products Distributed: $110,000</div>
-                        <div>Number of Partners: 16</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section className={styles.benefitSection}>
-            <div className={styles.benefitContainer}>
-                <div className={styles.benefitContent}>
-                    <h2 className={styles.benefitTitle}>Benefit of this Service</h2>
-                    <p className={styles.benefitText}>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.
-                    </p>
-                    <div className={styles.benefitStats}>
-                        <div>Units Distributed: 2,360</div>
-                        <div>People Supported: 2,360</div>
-                        <div>Amount of Products Distributed: $110,000</div>
-                        <div>Number of Partners: 16</div>
-                    </div>
-                </div>
-                <div className={styles.imageContainer}>
-                    <Image
-                        src='/placeholderdata.png'
-                        alt="Benefit Image"
-                        width={670}
-                        height={670}
-                        className={styles.benefitImage}
-                    />
-                </div>
-            </div>
-        </section>
-
-
-        <section className={styles.featuresSection}>
-            <h2 className={styles.featuresTitle}>Features of Service</h2>
-            <p className={styles.featuresText}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et massa mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien fringilla, mattis ligula consectetur, ultrices mauris. Maecenas vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum auctor ornare leo, non suscipit magna interdum eu. Curabitur pellentesque nibh nibh, at maximus ante fermentum sit amet.
-            </p>
-            <div className={styles.featuresImageContainer}>
-                <Image
-                    src='/placeholderdata.png'
-                    alt="Laptop Mockup"
-                    width={874}
-                    height={874}
-                    className={styles.featuresImage}
+            <section ref={suppliersRef}>
+                <ModelSection 
+                    title="Suppliers"
+                    blurb="Corporations provide tax-deductible donations of everyday health and hygiene products to Cathartic’s community partners. Donations are organized into programs, each targeting a specific under-resourced health inequity."
+                    image="/supplier.png"
                 />
-            </div>
-        </section>
+            </section>
 
+            <section ref={catharticRef}>
+                <ModelSection 
+                    title="Cathartic"
+                    blurb="Products are vetted and particularly selected by the Cathartic team for their quality and health benefits. Cathartic handles all of donation logistics between supplier and client, including product type, amount, date, and location. Communication channels are established between the Cathartic team, suppliers, and clients, with consistent updates and feedback for each party. Cathartic aids recipient community organizations in their distribution, providing volunteers, data-tracking, and support in the field."
+                    image="/bluelogo.png"
+                />
+            </section>
 
+            <section ref={clientsRef}>
+                <ModelSection 
+                    title="Clients"
+                    blurb="Community clients receive health and hygiene products directly from our suppliers at no cost of their own. Our “client” designation covers a wide variety of organizations, including public schools, nonprofits, food banks, local clinics, etc. Clients interface with Cathartic to submit donation requests, ensure storage capacity, and verify that their populations want the products they are receiving."
+                    image="/client.png"
+                />
+            </section>
+
+            <section ref={targetPopulationRef}>
+                <ModelSection 
+                    title="Target Population"
+                    blurb="Products are distributed to under-resourced populations that our community clients have established trustworthy relationships with. Cathartic’s data-tracking efforts ensure that target populations can provide feedback and request additional products for future distributions."
+                    image="/population.png"
+                />
+            </section>
+
+            <Footer />
         </main>
-    )
+    );
 }
