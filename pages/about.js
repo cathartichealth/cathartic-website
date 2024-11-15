@@ -19,7 +19,7 @@ export default function About() {
     };
   
     const cardData2 = {
-      imageUrl: 'ppl.png',
+      imageUrl: 'marketingheadshot.JPG',
       title: 'Marketing',
       description: 'We give out period care projects, such as pads, tampons, and panty liners to those who need greater access to these resources. These products are especially expensive and single use.',
       learnMoreUrl: '/periodcare'
@@ -61,22 +61,8 @@ export default function About() {
       <main
         className={`homepage ${styles.about} bg-white flex min-h-screen flex-col items-center justify-between ${inter.className}`}
       >
-<<<<<<< Updated upstream
-
-          <Navbar />
-
-
-=======
   
           <Navbar />
-
->>>>>>> Stashed changes
-  
-        <div className={`${styles.title} mt-36 text-center p-3`}>
-          <p>About Us</p>
-        </div>
-  
-        
   
         <div className={`${styles.description} my-24 text-center text-lg  w-4/5 xl:w-3/5 mx-auto`}>
           <div className={`${styles.title} p-4 text-center `}>
